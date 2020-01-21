@@ -52,9 +52,14 @@ Myprofile.html
     border:2px solid #3E0E0E;
 
  }
- .level1{width: 200px;
-        height: 25px;
-        background-color: #4BFE0C;
+ .clearfix::after {
+     content: "" ;
+     clear: both;
+     display: table;
+     box-sizing: border-box;
+ }
+ .level1{float: left;
+         width: 33.3%;
  }
  .level2 {width: 200px;
           height: 25px;
@@ -91,14 +96,27 @@ Myprofile.html
 <table>
     <tr>
         <td> Pure Javacsript </td>
+        <div class="clearfix">
         <td>
-            <div class="level1"></div>
+            <div class="level1" style="background-color: #4BFE0C;"></div>
+            <div class="level1" style="background-color:white;"> 30% </div>
+            <div class="level1" style="background-color:white;"></div>
         </td>
+        </div>
         <td>aiswiuq</td>
     </tr>
     <tr>
         <td> Python </td>
         <td>
+            <div class="level2" style= "background-color: #4BFE0C;"> 10%</div>
+            <div class="level2"></div>
+            <div class="level2"></div>
+            <div class="level2"></div>
+            <div class="level2"></div>
+            <div class="level2"></div>
+            <div class="level2"></div>
+            <div class="level2"></div>
+            <div class="level2"></div>
             <div class="level2"></div>
         </td>
         <td>jdjd</td>
@@ -106,6 +124,8 @@ Myprofile.html
     <tr>
         <td> Html </td>
         <td>
+            <div class="level3" style="background-color: #4BFE0C;"></div>
+            <div class="level3" style="background-color: #4BFE0C;"> 70% </div>
             <div class="level3"></div>
         </td>
         <td>dshdhd</td>
@@ -113,6 +133,7 @@ Myprofile.html
     <tr>
         <td> Css</td>
         <td>
+            <div class="level4" style="background-color: #4BFE0C;"></div> 50%
             <div class="level4"></div>
         </td>
         <td>hsws</td>
@@ -120,6 +141,10 @@ Myprofile.html
     <tr>
         <td>UI/UX</td>
         <td>
+            <div class="level5" style="background-color: #4BFE0C;"></div>
+            <div class="level5" style="background-color: #4BFE0C;"></div>
+            <div class="level5"> 40% </div>
+            <div class="level5"></div>
             <div class="level5"></div>
         </td>
         <td>jdeir</td>
